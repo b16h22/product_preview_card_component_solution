@@ -105,14 +105,12 @@
 
     @media screen and (max-width:768px) {
 
-      .container {
-        padding: 1.5em;
-      }
-
       .card {
         flex-direction: column;
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
       }
 
       .coverimg_mobile {
