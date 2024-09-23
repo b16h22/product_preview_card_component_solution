@@ -1,0 +1,132 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: hsl(30, 38%, 92%);
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .card {
+      background-color: white;
+      max-width: 38em;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .coverimg_desktop {
+      max-width: 50%;
+      border-radius: 12px 0 0 12px;
+      object-fit: cover;
+    }
+
+    .coverimg_mobile {
+      display: none;
+    }
+
+    .content {
+      max-width: 50%;
+      padding: 32px;
+    }
+
+    h1 {
+      font-family: Fraunces;
+      font-weight: 700;
+    }
+
+    h1.name {
+      color: hsl(212, 21%, 14%);
+      font-size: 2em;
+      line-height: 1em;
+    }
+
+    p {
+      font-family: Montserrat;
+      font-size: 0.9em;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+      line-height: 1.6;
+    }
+
+    p.perfume {
+      text-transform: uppercase;
+      font-size: 0.8em;
+      letter-spacing: 0.4em;
+      color: hsl(228, 12%, 48%);
+      margin-top: 0;
+    }
+
+    .price {
+      padding-top: 0;
+    }
+
+    .newprice {
+      display: inline-block;
+      vertical-align: middle;
+      color: hsl(158, 36%, 37%);
+    }
+
+    .oldprice {
+      display: inline-block;
+      padding: 1em;
+    }
+
+    .cart {
+      align-items: center;
+      width: 100%;
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      font-family: Montserrat;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      padding: 0.2em;
+    }
+
+    .cart:hover {
+      background-color: hsl(156, 59%, 24%);
+      cursor: pointer;
+    }
+
+    .carticon {
+      vertical-align: middle;
+      width: 1.2em;
+      height: 1.2em;
+      padding: 1em;
+      margin-left: -1em;
+    }
+
+    @media screen and (max-width:768px) {
+
+      .container {
+        padding: 1.5em;
+      }
+
+      .card {
+        flex-direction: column;
+        margin-bottom: auto;
+      }
+
+      .coverimg_mobile {
+        display: block;
+        max-width: 100%;
+        border-radius: 12px 12px 0 0;
+        object-fit: cover;
+      }
+
+      .coverimg_desktop {
+        display: none;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+      
+    }
