@@ -70,6 +70,10 @@
     .oldprice {
       display: inline-block;
       padding: 1em;
+      font-family: Montserrat;
+      font-size: 0.9em;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
     }
 
     .cart {
