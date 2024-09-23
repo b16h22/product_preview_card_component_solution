@@ -3,14 +3,13 @@
       margin: 0;
       padding: 0;
       background-color: hsl(30, 38%, 92%);
-      height: 100vh;
     }
 
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
+      height: 100vh;
     }
 
     .card {
@@ -19,7 +18,6 @@
       border-radius: 12px;
       display: flex;
       flex-direction: row;
-      align-items: center;
     }
 
     .coverimg_desktop {
@@ -63,10 +61,6 @@
       margin-top: 0;
     }
 
-    .description {
-      margin-bottom: 0;
-    }
-
     .newprice {
       display: inline-block;
       vertical-align: middle;
@@ -105,12 +99,13 @@
 
     @media screen and (max-width:768px) {
 
+      .container {
+        height: 100%;
+      }
+
       .card {
         flex-direction: column;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        margin: 1.5em;
       }
 
       .coverimg_mobile {
