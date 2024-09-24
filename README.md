@@ -43,25 +43,58 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Using meda queries and breakpoints to create a responsive layout that worked on Desktop and Mobile screens was a major part ofthis challenge. This is how I did it.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+    .card {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .coverimg_desktop {
+      max-width: 50%;
+    }
+
+    .coverimg_mobile {
+      display: none;
+    }
+
+    .content {
+      max-width: 50%;
+    }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+
+```css
+    @media screen and (max-width:768px) {
+
+      .container {
+        height: 100%;
+      }
+
+      .card {
+        flex-direction: column;
+        margin: 1.5em;
+      }
+
+      .coverimg_mobile {
+        display: block;
+        max-width: 100%;
+      }
+
+      .coverimg_desktop {
+        display: none;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+      
+    }
 ```
 
 ### Useful resources
 
-- [CSS Lists](https://www.w3schools.com/css/css_list.asp) - This is a good article that helped me understand CSS Lists styling.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) - This is a good article that helped me understand CSS Flexbox and it's capabilities.
 - [CSS Media Query](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) - This is a good article that helped me understand CSS Media Query and responsive layouts.
 
 ## Author
